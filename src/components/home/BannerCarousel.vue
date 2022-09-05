@@ -239,12 +239,16 @@
 
     const resize = () => {
         // console.log(window.innerWidth);
+        let past = slidePerView.value
         slidePerView.value = 4
         let root = document.documentElement;
         root.style.setProperty("--slide-per-view", "4");
         if(window.innerWidth <= 640){
-        slidePerView.value = 3
-        root.style.setProperty("--slide-per-view", "3");
+            slidePerView.value = 3
+            root.style.setProperty("--slide-per-view", "3");
+        }
+        if(past != slidePerView.value){
+            swiperKey.value++
         }
         // else {
         //     slidePerView.value = 4

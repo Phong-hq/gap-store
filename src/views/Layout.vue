@@ -1,8 +1,8 @@
 <template>
     <header-component />
-    <div class="flex flex-col relative grow">
+    <div class="h-full flex flex-col relative grow">
         <menu-component />
-        <div class=" pl-0 sm:pl-[60px] w-100%">
+        <div class=" pl-0 sm:pl-[60px] bg-[#f5f5f5] w-full grow">
             <router-view />
         </div>
     </div>

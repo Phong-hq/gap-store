@@ -35,16 +35,14 @@
 
     // CREATE FUNCTION
     const resize = () => {
-        // console.log(window.innerWidth);
+        console.log(window.innerWidth);
         itemShow.value = 3
         if(window.innerWidth > 640 && window.innerWidth <= 980){
             itemShow.value = 2
-            console.log(window.innerWidth);
         }
         else if(window.innerWidth <= 640){
             itemShow.value = 0
         }
-        console.log(itemShow.value);
         
         // else {
         //     slidePerView.value = 4
