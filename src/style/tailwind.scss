@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input{
+        @apply border border-[#E0E0E0] border-[1.5px] rounded-[0.5rem] pl-3 text-14px;
+    }
+    .input::placeholder{
+        @apply text-[#BDBDBD]
+    }
+    .input:focus{
+        @apply outline-0
+    }
+    .btn-primary {
+        @apply inline-block text-lg text-center flex-center rounded-[0.5rem] bg-primary text-white font-bold;
+    }
+        
+}
+
+@layer utilities {
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }

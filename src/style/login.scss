@@ -1,0 +1,47 @@
+.login{
+    background-image: url(@/assets/images/login/background2.webp);
+    background-size: cover;
+    background-position: center;
+    .login-box{
+        flex-grow: 0;
+        margin: auto 0;
+        min-height: unset;
+        .input{
+            box-shadow: 1px 1px 6px #B4C6E4;
+            width: 100%;
+        }
+        .remember-check{
+            .p-checkbox-box{
+            box-shadow: 1px 1px 6px #B4C6E4;
+
+                border-radius: 4px;
+            }
+        }
+        .password-input{
+            box-shadow: 1px 1px 6px #B4C6E4;
+            border-radius: 0.5rem;
+            padding: 0;
+            overflow: hidden;
+            border: none;
+            input{
+                border-radius: 0.5rem;
+                border-width: 1.5px;
+                border-color: transparent;
+                width: 100%;
+                height: 100%;
+                padding-left: 0.75rem;
+            }
+        }
+    }
+    @media (max-width: 1200px) {
+        background-image: url(@/assets/images/login/background.webp);
+    }
+    @media (max-width: 639px) {
+        background-size: cover;
+        .login-box{
+            flex-grow: 1;
+            margin: unset;
+            min-height: 540px;
+        }
+    }
+}
