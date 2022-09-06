@@ -236,3 +236,27 @@ body {
   .p-galleria-mask {
     --maskbg: rgba(0, 0, 0, 0.9);
   }
+  .p-splitbutton.p-button-rounded {
+    border-radius: 2rem;
+  }
+  .p-splitbutton.p-button-rounded > .p-button {
+    border-radius: 2rem;
+  }
+  .p-button.p-button-rounded {
+    border-radius: 2rem;
+  }
+  .p-progressbar {
+    border: 0 none;
+    height: 2px;
+    background: #edebe9;
+    border-radius: 2px;
+  }
+  .p-progressbar .p-progressbar-value {
+    border: 0 none;
+    margin: 0;
+    background: #0078d4;
+  }
+  .p-progressbar .p-progressbar-label {
+    color: #ffffff;
+    line-height: 2px;
+  }

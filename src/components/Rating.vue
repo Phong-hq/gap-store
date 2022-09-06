@@ -4,7 +4,8 @@
             <li v-for="(value, index) in ratingList" :key="index" class="relative mr-[4px] last:mr-0">
                 <img src="@/assets/images/rating-blank-icon.svg" />
                 <div class="filled-rating" :style="`width: ${value}%`">
-                    <img src="@/assets/images/rating-icon.svg" />
+                    <img src="@/assets/images/rating-icon-orange.svg" v-if="orange" />
+                    <img src="@/assets/images/rating-icon.svg" v-else />
                 </div>
             </li>
         </ul>
@@ -23,6 +24,10 @@ const props = defineProps({
         default: false
     },
     largeIcon: {
+        type: Boolean,
+        default: false
+    },
+    orange: {
         type: Boolean,
         default: false
     }

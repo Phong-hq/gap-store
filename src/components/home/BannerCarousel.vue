@@ -19,19 +19,22 @@
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
                 @sliderMove="slideMove()"
+                @mouseover="pauseSlide()"
+                @mouseleave="startSlide(), isHover = false"
                 :pagination="{
                     clickable: true,
                 }"
                 :navigation="true"
                 :modules="modules"
                 class="mySwiper"
+                :class="{'hover' : isHover}"
                 >
                 <swiper-slide 
                     class="slide" v-for="(item, i) in bannerList" 
                     :key="i" 
                     @click="clickSlide(i)" 
-                    @mouseover="pauseSlide(), item.scale = true"
-                    @mouseleave="startSlide(), item.scale = false"
+                    @mouseover="item.scale = true"
+                    @mouseleave="item.scale = false"
                     >
                     <div class="image" :class="{'active' : item.active || item.scale }">
                         <img  :src="item.itemImageSrc" alt="">
@@ -119,12 +122,13 @@
         },
     ]);
     const bannerList2 = ref<any[]>([]);
-    const modules = ref([Autoplay]);
+    const modules = ref([Autoplay, Navigation]);
     const activeImageID = ref(0);
     const activeImageIndexSwiper = ref();
     const activeImageIDSwiperPast = ref();
     const slidePerView = ref(4);
     const swiperKey = ref(0);
+    const isHover = ref(false)
     // const value1 = ref(0);
 
     const disabledClick = ref(false);
@@ -333,6 +337,7 @@
     };
 
     const pauseSlide = () => {
+        isHover.value = true
         startTime2.value = new Date()
         // console.log('pauseSlide',startTime2.value - startTime.value);
         remaining.value = remaining.value - (startTime2.value - startTime.value) >= 0 ? remaining.value - (startTime2.value - startTime.value) : 0
