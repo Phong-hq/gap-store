@@ -46,5 +46,8 @@ const handelTitleButton = () => {
             height: 42px;
             border-bottom: 1px solid #E2E2E2;
         }
+        @media (max-width: 640px) {
+            border-radius: 8px 8px 8px 8px;
+        }
     }
 </style>

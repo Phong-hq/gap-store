@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 sticky left-content ">
+    <div class="p-4 sticky sm:relative left-content ">
         <div class="flex-center h-[150px]">
             <img src="@/assets/images/review/netflix-logo.png" alt="">
         </div>
@@ -33,7 +33,7 @@
 
 <style lang="scss">
     .left-content{
-        top:76px;
+        // top:76px;
         height: calc(100vh - 76px);
         background-color: #fff;
         width: 100%;
@@ -44,6 +44,14 @@
             button{
                 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
             }
+        }
+        @media (max-width: 640px) {
+            height: auto;
+            max-width: unset;
+            top: 0;
+            margin-bottom: 10px;
+            box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
     }
 </style>

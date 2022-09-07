@@ -30,7 +30,7 @@
                 </div>
                 <div class="overlay" :class="zoom ? 'opacity-1 duration-200': 'pointer-events-none opacity-0 delay-100'">
                     <div class="flex-center w-full h-full relative">
-                        <div class="absolute top-0 right-0 w-[40px] h-[40px] rounded-[50%] flex-center hover:bg-[#706d6d8c] duration-100 cursor-pointer m-8" @click="zoom = false" >
+                        <div class="absolute top-0 right-0 w-[40px] h-[40px] rounded-[50%] flex-center hover:bg-[#706d6d8c] duration-100 cursor-pointer m-8 z-50" @click="zoom = false" >
                             <img src="@/assets/images/x-circle.svg" alt="">
 
                         </div>

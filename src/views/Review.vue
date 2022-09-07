@@ -1,6 +1,6 @@
 <template>
     <div class="bg-[#F5F5F5] flex h-full pt-[10px] pb-14 rewview">
-        <div class="mx-[10px] left">
+        <div class="mx-[10px] left hidden sm:block">
             <left-content-component />
             <!-- <div class="p-4 sticky">
                 <div class="flex-center h-[150px]">
@@ -29,7 +29,8 @@
                 </div>
             </div> -->
         </div>
-        <div class="grow right">
+        <div class="grow right px-[10px] sm:px-0">
+            <left-content-component class="block sm:hidden" />
             <content-item1-component />
             <content-item2-component />
             <content-item3-component />

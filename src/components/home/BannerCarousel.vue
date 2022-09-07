@@ -12,7 +12,7 @@
             <swiper
                 :slidesPerView="slidePerView"
                 :spaceBetween="slidePerView == 4 ? 12 : 7"
-                :slidesPerGroup="1"
+                :slidesPerGroup="slidePerView"
                 :loop="true"
                 :key="swiperKey"
                 :loopFillGroupWithBlank="false"
