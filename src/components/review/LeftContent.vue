@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 sticky sm:relative left-content ">
+    <div class="p-4 sm:sticky relative left-content ">
         <div class="flex-center h-[150px]">
             <img src="@/assets/images/review/netflix-logo.png" alt="">
         </div>
@@ -33,7 +33,7 @@
 
 <style lang="scss">
     .left-content{
-        // top:76px;
+        top:76px;
         height: calc(100vh - 76px);
         background-color: #fff;
         width: 100%;

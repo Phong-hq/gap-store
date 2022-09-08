@@ -13,7 +13,7 @@
                         </div>
                         <div class="w-[120px] lg:w-[150px] mb-8">
                             <p class="text-12px lg:text-14px text-[#656565]">Release Date</p>
-                            <p class="text-12px lg:text-14px font-semibold">10/18/2010</p>
+                            <p class="text-12px lg:text-14px">10/18/2010</p>
                             <br />
                             <br />
                             <p class="text-12px lg:text-14px text-[#656565]">Supported <br /> languages</p>
@@ -27,14 +27,14 @@
                         </div>
                         <div class="w-[120px] lg:w-[150px] mb-8">
                             <p class="text-12px lg:text-14px text-[#656565]">Approximate size</p>
-                            <p class="text-12px lg:text-14px font-semibold">10.4 MB</p>
+                            <p class="text-12px lg:text-14px">10.4 MB</p>
                             <br />
                             <br />
                             <p class="text-12px lg:text-14px text-[#656565]">Additional <br /> terms</p>
                         </div>
                         <div class="w-[120px] lg:w-[150px] mb-8">
                             <p class="text-12px lg:text-14px text-[#656565]">Installation</p>
-                            <p class="text-12px lg:text-14px font-semibold text-ellipsis">Get this app white signed in to your ....</p>
+                            <p class="text-12px lg:text-14px text-ellipsis">Get this app white signed in to your ....</p>
                             <br />
                             <p class="text-12px lg:text-14px text-[#656565]">Report this product</p>
                         </div>

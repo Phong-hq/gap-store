@@ -8,17 +8,17 @@
                     <p class="text-14px text-primary mt-1 mb-6">Login your account</p>
                 </div>
                 <div class="w-full">
-                    <p class="font-semibold text-primary mb-2">ID</p>
+                    <p class="font-semibold text-[#3255D1] mb-2">ID</p>
                     <!-- <input type="text" class="input w-full h-[40px] mb-2" placeholder="Enter your ID"> -->
                     <div class="mb-2">
                         <input-text class="input w-full h-[40px]" type="text" v-model="id" placeholder="Enter your ID" />
                     </div>
-                    <p class="font-semibold text-primary mb-2">User/ Email</p>
+                    <p class="font-semibold text-[#3255D1] mb-2">User/ Email</p>
                     <!-- <input type="text" class="input w-full h-[40px] mb-2" placeholder="Enter your user/ email"> -->
                     <div class="mb-2">
                         <input-text class="input w-full h-[40px]" type="text" v-model="userName" placeholder="Enter your user/ email" />
                     </div>
-                    <p class="font-semibold text-primary mb-2">Password</p>
+                    <p class="font-semibold text-[#3255D1] mb-2">Password</p>
                     <div class="mb-3">
                         <!-- <input :type="showPassword ? 'text' : 'password'" class="input w-full h-[40px] pr-8" placeholder="Enter your password"> -->
                         <!-- <input-text class="input w-full h-[40px]" type="text" v-model="password" placeholder="Enter your password" /> -->
@@ -32,7 +32,7 @@
                         </div> -->
                         <div class="flex-center field-checkbox">
                             <Checkbox class="w-5 h-5 border-none mr-[6px] remember-check" inputId="remember" v-model="remember" :binary="true" />
-                            <label class="text-14px text-primary" for="remember">Remember me</label>
+                            <label class="text-14px text-[#3255D1]" for="remember">Remember me</label>
                         </div>
                         <p class="text-14px text-danger cursor-pointer">Forgot password ?</p>
                     </div>
